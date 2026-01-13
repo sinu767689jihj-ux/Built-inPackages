@@ -1,0 +1,34 @@
+package CollectionFrameWork1;
+import java.util.LinkedList;
+public class LinkedListDemo {
+    Employee e1=new Employee(101,"srinu",456.87,20,'M',"AIDS","Hyd");
+    Employee e2=new Employee(102,"Raja",789.56,22,'M',"CSE","Banglore");
+    Employee e3=new Employee(103,"MahendraReddy",5623.87,21,'M',"ECE","vizag");
+    Employee e4=new Employee(104,"Mamatha",656.87,20,'F',"EEE","Hyd");
+    Employee e5=new Employee(105,"Priyanka",766.87,24,'F',"AIML","Pune");
+    Employee e6=new Employee(106,"ManiDeepak",1006.87,20,'M',"ECE","Mumbai");
+    Employee e7=new Employee(107,"Vijaya",832.98,25,'F',"Mech","Banglore");
+    Employee e8=new Employee(108,"Yashu",729.45,19,'F',"CIVIL","Tirupati");
+    Employee e9=new Employee(109,"Ashok",987.96,26,'M',"EEE","Hyd");
+    Employee e10=new Employee(110,"Usha",638.66,28,'F',"AIDS","Chennai");
+    public void display(){
+        LinkedList<Employee> l=new LinkedList<>();
+        l.add(e1);
+        l.add(e2);
+        l.add(e3);
+        l.add(e4);
+        l.add(e5);
+        l.add(e6);
+        l.add(e7);
+        l.add(e8);
+        l.add(e9);
+        l.add(e10);
+        System.out.println(l);
+        System.out.println("Size of LinkedList:"+l.size());
+    }
+    public static void main(String[] args)
+    {
+        LinkedListDemo d=new LinkedListDemo();
+        d.display();
+    }
+}
